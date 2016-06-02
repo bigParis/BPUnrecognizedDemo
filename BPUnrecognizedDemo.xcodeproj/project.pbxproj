@@ -13,6 +13,8 @@
 		1B59BC7A1D0014D8002F7353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B59BC781D0014D8002F7353 /* Main.storyboard */; };
 		1B59BC7C1D0014D8002F7353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B59BC7B1D0014D8002F7353 /* Assets.xcassets */; };
 		1B59BC7F1D0014D8002F7353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B59BC7D1D0014D8002F7353 /* LaunchScreen.storyboard */; };
+		1B59BC881D00171E002F7353 /* MethodHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59BC871D00171E002F7353 /* MethodHook.m */; };
+		1B59BC8B1D001849002F7353 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59BC8A1D001849002F7353 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		1B59BC7B1D0014D8002F7353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B59BC7E1D0014D8002F7353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B59BC801D0014D8002F7353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B59BC861D00171E002F7353 /* MethodHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodHook.h; sourceTree = "<group>"; };
+		1B59BC871D00171E002F7353 /* MethodHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodHook.m; sourceTree = "<group>"; };
+		1B59BC891D001849002F7353 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		1B59BC8A1D001849002F7353 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		1B59BC6E1D0014D8002F7353 /* BPUnrecognizedDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B59BC861D00171E002F7353 /* MethodHook.h */,
+				1B59BC871D00171E002F7353 /* MethodHook.m */,
 				1B59BC721D0014D8002F7353 /* AppDelegate.h */,
 				1B59BC731D0014D8002F7353 /* AppDelegate.m */,
 				1B59BC751D0014D8002F7353 /* ViewController.h */,
@@ -67,6 +75,8 @@
 				1B59BC7D1D0014D8002F7353 /* LaunchScreen.storyboard */,
 				1B59BC801D0014D8002F7353 /* Info.plist */,
 				1B59BC6F1D0014D8002F7353 /* Supporting Files */,
+				1B59BC891D001849002F7353 /* TestObject.h */,
+				1B59BC8A1D001849002F7353 /* TestObject.m */,
 			);
 			path = BPUnrecognizedDemo;
 			sourceTree = "<group>";
@@ -150,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B59BC771D0014D8002F7353 /* ViewController.m in Sources */,
+				1B59BC881D00171E002F7353 /* MethodHook.m in Sources */,
+				1B59BC8B1D001849002F7353 /* TestObject.m in Sources */,
 				1B59BC741D0014D8002F7353 /* AppDelegate.m in Sources */,
 				1B59BC711D0014D8002F7353 /* main.m in Sources */,
 			);

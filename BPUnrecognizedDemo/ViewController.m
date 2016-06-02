@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MethodHook.h"
+#import "TestObject.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [MethodHook hookNotRecognizeSelector];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    TestObject *testObject = [[TestObject alloc] init];
+    [testObject performSelector:@selector(notExistSelector:test:) withObject:@(2) withObject:@(4)];
 }
-
 @end
